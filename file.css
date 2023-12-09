@@ -1,0 +1,431 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:wght@300;500&display=swap');
+  
+
+  :root{
+    --yellow:#d0ff00;
+    --blue:#006ab5;
+    --skyblue:#87b8ea;
+    --black:#2d2525;
+    --red:#e4181b;
+    --green:#7bd34e;
+    --light:#e3c6ff;
+    --grey:#8da399;
+    --white:#eee;
+    --cream:#ffe1e1;
+    --lightgreen:#d3ffce;
+  }
+
+*{
+    padding: 0;
+    margin: 0; 
+    font-family: 'Kdam Thmor Pro', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+
+/* popup */
+/* Query */
+.query{
+    float: right;
+    position: fixed;
+    margin-left: 68em;
+    margin-top: 2.3em;
+}
+
+.submitquery{
+    font-size: 1.2em;
+    padding: 0.5em;
+    border-radius: 1.5vh;
+    background-color: var(--blue);
+    color: white;
+    text-decoration: none;
+}
+.query:hover{
+    box-shadow: 0px 10px 8px 5px;
+}
+.displayform{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background-color: #27AE60; */    
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.displayform:target{
+    visibility: visible;
+    opacity: 2;
+    
+}
+.wrapper{
+    width: 560px;
+    height: 450px;
+    margin: 80px 30px;
+    padding: 50px;
+    padding-right:2em;
+    border-radius: 5px;
+    position: relative;
+    transition: all 1ms ease-in-out;
+    border: 1px solid black;
+    line-height: 3.5em;
+    background-color: #17202A;
+    color: white;
+    background-image: url('./sky2.jpg');
+    border-radius: 2em;
+}
+.wrapper:hover{
+    box-shadow: 1px 1px 10px 10px var(--green),
+    2px 0px 15px 8px;
+}
+.wrapper .close{
+    position: absolute;
+    top:20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+.wrapper .content{
+    float: left;
+    text-align: left;
+    font-size: 1.5em;
+    margin-top: 1em;
+    padding: 10px 0;
+}
+.wrapper .content input{
+    float: right;
+    padding: 4px;
+    text-align: center;
+    margin-top: 1em;
+    margin-left: 8em;
+    background: transparent;
+    border: none;
+    color: white;
+    border-bottom: 1px solid white;
+}
+.queryarea{
+    margin-left: 11em;
+    width: 14em;
+    height: 80px;
+    margin-top: 2em;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.wrapper .content label{
+    margin-left: 1.5em;
+}
+
+.wrapper .content  .querysend{
+    width: 15em;
+    height: 3em;
+    margin-left: 5em;
+    margin-top: 1.9em;
+    font-size: .7em;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 6px 6px 12px #006ab5,
+    -6px -6px 12px #ffff;
+    background: transparent;
+    color: White;
+    border: none;
+    border-radius: 10px;
+}
+
+
+/* popup */
+
+.port{
+    width: 21.4em;
+    position: fixed;
+    background-color: var(--grey);
+}
+.download{
+   width: auto;
+   margin-top: 3.5em;
+}
+#btn{
+    width: 11em;
+    font-size: 0.5em;
+    padding: 0.2em;
+    background-color:#27AE60 ;
+    color: #000;
+    font-size: 1.2em;
+    font-weight: 3em;
+    cursor: pointer;
+    color: var(--lightgreen);
+    border-radius: 1.5vh;
+}
+
+#btn:hover{
+    border-radius: 0px;
+    box-shadow: 0px 0px 10px 2px black;
+    border-radius: 1vh;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: var(--grey);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .nav a {
+    display: block;
+    color: var(--black);
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+  
+
+  .nav a:hover {
+    color: var(--white);
+  }
+  .img{
+    margin-top: 3em;
+    border-radius: 50%;
+    width: 15em;
+  }
+
+
+
+  .About{
+    height: 43em;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cream);
+    z-index:-1;
+  }
+.About .page1{
+    padding-top: 10em;
+    padding-right: 0;
+}
+.About .page1 .name{
+    font-size: 4em;
+    text-shadow: 2px  5px 6px;
+}
+.About .page1 .name #senger{
+    color: #d0ff00;
+    background-color: #000;
+    
+}
+.About .page1  #address{
+    font-size: 1.8em;
+    margin-left: .5em;
+}
+
+.About .summry{
+    width: 50em;
+    margin-left: 15em;
+   text-align: left; 
+}
+
+.About .social{
+    list-style-type: none;
+    /* height: 100%; */
+    overflow: auto;
+    margin-top: 2em;
+    width: auto;
+}
+.About .social a{
+    text-decoration: none;
+    color: white;
+}
+
+.About .social .handels{
+    width: 50px;
+    display: inline-block;
+    font-size: 2em;
+    margin-inline: 12px;
+    border: 1px solid var(--black);
+    border-radius: 2vh;
+    text-decoration: none;
+    background-color:#8da399;
+}
+.About .social #fb:hover{
+    cursor: pointer;
+    background-color: var(--blue);
+    color: #eee;
+}
+.About .social #ln:hover{
+    cursor: pointer;
+    background-color: var(--blue);
+    color: #eee;
+}
+.About .social #ig:hover{
+    cursor: pointer;
+    background-color: #f09433;
+    color: var(--white);
+}
+.About .social #github:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    
+}
+
+/* project */
+.project{
+    width: auto;
+    height: 65em;
+    background-color: var(--lightgreen);
+}
+
+.project .proname{
+    padding-top: 1em;
+    margin-right: 7em;
+    margin-top: 0.01em;
+    font-size: 3em;
+}
+
+.project  .project1{
+    margin-right: 9em;
+    font-size: 2.5em;
+}
+.project #pro1{
+    width: 50em;
+    margin-left: 14em;
+    text-align: left;
+}
+
+.project  .project2{
+    margin-right: .5em;
+    font-size: 2.5em;
+}
+.project #pro2{
+    width: 50em;
+    margin-left: 14em;
+    text-align: left;
+}
+
+.project  .project3{
+    margin-left: 4.5em;
+    font-size: 2.5em;
+}
+.project #pro3{
+    width: 50em;
+    margin-left: 14em;
+    text-align: left;
+}
+
+/* Education */
+.education{
+    width: auto;
+    height: 43em;
+    background-color: var(--white);
+    margin-top: .1em;
+}
+
+.education .edu{
+    font-size: 3em;
+    margin-right: 6em;
+    padding-top: 1em;
+}
+.education .graduation{
+    margin-left: 16.8em;
+    text-align: left;
+}
+.education .bcaa{
+    font-size: 1.2em;
+    margin-left: 21em;
+    color: var(--green);
+    text-align: left;
+} 
+.education .bca{
+    font-size: 1em;
+    margin-left: 25.3em;
+    text-align: left;
+}
+
+/* skills */
+
+.skills{
+    width: auto;
+    height: 43.5em;
+    background-color: #cbbeb5;
+} 
+.skills .skillh1{ 
+    margin-left: 8.1em;
+    font-size: 3em;
+    padding-top: 1em;
+    text-align: left;
+}
+.skills .skillh2{ 
+    margin-left: 14.3em;
+    font-size: 1.8em;
+    margin-top: 1.5em;
+    list-style-type:square;
+    color: #065535;
+    text-align: left;
+}
+.skills .skillul{
+    width: auto;
+    font-size: 4em;
+    margin-top: 0.5em;
+}
+i{
+    width: auto;
+    color: var(--blue);
+}
+
+.list5{
+    text-align: left;
+    margin-left: 18em;
+    font-size: 1.5em;
+    margin-top: .4em;
+}
+
+/* intrest */
+#intrest{
+    width: auto;
+    height: 30em;
+    padding-top: 13em;
+    background-color: #fffcfc;
+}
+.intrest{
+    text-align: left;
+    padding-left: 8em;
+    font-size: 3em;
+}
+.para1{
+    text-align: left;
+    padding-left: 24em;
+    color: var(--skyblue);
+}
+
+/* certificate */
+#certificate{
+    width: auto;
+    height: 43em;
+    background-color: #85bdde;
+}
+.certificate{
+    text-align: left;
+    padding-left: 8em;
+    font-size: 3em;
+    padding-top: 3em;
+}
+
+.list3{
+    text-align: left;
+    padding-left: 16em;
+    font-size: 1.5em;
+}
+.span{
+    color: var(--red);
+}
+
+
+
